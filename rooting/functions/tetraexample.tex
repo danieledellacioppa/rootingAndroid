@@ -1,0 +1,72 @@
+\def\tetraexample#1#2#3#4#5#6#7#8#9{
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[node distance=5mm,
+terminal/.style={
+% The shape:
+rectangle,
+minimum size=0.1\linewidth,
+% The rest
+very thick,draw=white,
+top color=white,bottom color=white,
+font=\rmfamily},every annotation/.style={
+minimum size=0.05\linewidth,
+fill=BrickRed!45}]
+\node (russell) [terminal] at (-8,0)
+{
+\lstinputlisting#1
+};
+
+\node (highlight) [rectangle,
+    draw = black,
+    thick,
+    text = black,
+%    path fading=north,
+    rounded corners=1mm,
+    fill = black,
+    opacity=.2,
+    minimum width = 56ex, 
+    minimum height = #7,
+    yshift=#8] at (russell.north)
+{
+
+};
+
+\node (centro) [rectangle,
+    draw = BrickRed,
+    thick,
+    text = black,
+%    path fading=north,
+    rounded corners=1mm,
+    fill = BrickRed,
+    opacity=.2,
+    #9] at (highlight.center)
+{
+
+};
+
+\node[inner sep=0pt,xshift=7cm] (whitehead) at (highlight.east)
+    {#2};
+\draw[->,thick] (highlight.east) -- (whitehead.west)
+    #3
+
+%\node (highlight) [annotation,scale=1,yshift=-9ex,xshift=8ex,path fading=north] at (russell.north)
+%{
+%
+%};
+
+\node (explaining) [annotation,scale=2,yshift=-1cm,xshift=-5ex,path fading=south,fill=BrickRed!30] at (whitehead.south)
+{
+
+{\fontsize{4.5pt}{2pt}\selectfont #5} 
+
+};
+
+\draw [->,thick,BrickRed] (centro.south) .. controls +(down:5mm) and +(left:5mm) .. (explaining.west)
+            #4
+
+\end{tikzpicture}
+#6
+\end{figure}
+}
+

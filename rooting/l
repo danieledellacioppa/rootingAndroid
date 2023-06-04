@@ -1,0 +1,3 @@
+#!/bin/sh
+makeglossaries english-fs
+xelatex english-fs.tex

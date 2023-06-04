@@ -1,0 +1,3 @@
+#!/bin/sh
+makeglossaries rooting
+xelatex rooting.tex

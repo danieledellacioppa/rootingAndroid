@@ -1,0 +1,60 @@
+{\color{teal}\chapter{Initial Steps}\label{cap:dpa}}
+
+\minitoc
+
+\AddToShipoutPictureBG*{%
+  \AtPageUpperLeft{%
+    \raisebox{-\height}{%
+      \includegraphics[width=\paperwidth]{./chapters/initialsteps/cover.jpeg}%
+    }%
+  }
+}
+
+\section{Let's Get Started}{\faCaretRight}
+Welcome to the "Let's Get Started" section for exploring the rooting of the ACTAB721 device! Before we begin, it's important to understand that rooting carries risks and may void your device's warranty. Make sure you understand the risks involved and proceed with caution.
+
+\subsection{Introduction to Rooting}
+
+Rooting is the process of obtaining administrator privileges (root access) on your Android device. It grants you greater control over the operating system, allowing for deep customization and modification of your device. However, please be aware that rooting comes with risks, such as data loss, device malfunctioning, and compromised security. Exercise caution and be aware of the potential negative impacts before proceeding.
+
+\subsection{Device Preparation}
+
+Before starting the rooting process for your ACTAB721 device, take a few precautions:
+
+\begin{itemize}
+  \item Enable Developer Options: Go to the device's Settings, scroll down to the "About phone" or "About tablet" section, and tap the "Build number" repeatedly to enable Developer Options.
+  \item Enable USB Debugging: Access the Settings, navigate to Developer Options, and enable USB Debugging. This allows your computer to communicate with the device during the rooting process.
+  \item Fully Charge Your Device: Ensure that the ACTAB721 device is fully charged or connected to a power source during the rooting process to prevent any unexpected shutdowns.
+\end{itemize}
+
+\subsection{Bootloader Unlocking}
+
+In some cases, rooting the ACTAB721 device may require unlocking the bootloader. Unlocking the bootloader allows for the installation of custom software on the device. To unlock the bootloader of the ACTAB721 device there's an option that you need to toggle on: \faToggleOn \textsc{oem unlocking}.
+
+\section{Exploring Alternative Methods}{\faCaretRight}
+While the use of the \gls{twrp} is a popular method for rooting Android devices, unfortunately, it is not supported for Acer devices. However, there are alternative methods available that you can explore to root your Acer Android device. In this section, we will briefly discuss some of these alternative options.
+
+\subsection{One-Click Rooting Tools}
+
+One approach to consider is the use of one-click rooting tools. These tools are designed to simplify the rooting process by providing a user-friendly interface and automated procedures. They often work by exploiting security vulnerabilities in the Android operating system to gain root access. Some well-known one-click rooting tools include KingRoot, Magisk, and SuperSU.
+
+\subsection{Custom ROMs}
+Warning \faRadiation
+
+\begin{mydef}{When to flash a ROM}{whentoflash}
+According to the article from Acer in section \ref{subsec:dev-tools} this step comes after a Custom Recovery tool flashing. \textbf{It's probably NOT an alternative method to \gls{twrp}} as I was suggesting.
+\end{mydef}
+
+Flashing a \gls{rom} is a process that allows users to install a custom operating system on their Android devices, enabling them to customize and enhance their device's functionality.\gls{twrp} is a popular custom recovery that plays a crucial role in this process. \gls{twrp} provides a user-friendly interface and advanced features that enable users to easily flash custom \gls{rom}s, create backups, and perform system-level modifications. It acts as a powerful tool that facilitates the installation of custom \gls{rom}s on Android devices. Therefore, when discussing alternatives to \gls{twrp}, other custom recoveries like ClockworkMod (CWM) or PhilZ Recovery can offer similar functionalities.
+
+%Another alternative method for rooting your Acer device is through the installation of a custom \gls{rom}. A custom \gls{rom} is a modified version of the Android operating system that provides additional features, customization options, and often includes root access.
+
+How do we ensure compatibility with this specific Acer Tablet beforehand?
+
+\subsection{Developer-Provided Tools}
+\label{subsec:dev-tools}
+In some cases, the manufacturer or developer of your Acer device may offer their own tools or methods for rooting the device. These tools are typically provided specifically for their devices and may offer a more reliable and supported approach to rooting.
+
+\href{https://blog.acer.com/en/discussion/616/rooting-your-phone-your-complete-guide-2023}{In this article}, Acer itself mentions the use of \gls{twrp} but if you look at the Devices section on the \href{https://twrp.me/Devices/}{\gls{twrp} website}, Acer isn't listed as one of the OEMs compatible. \faHospital
+
+

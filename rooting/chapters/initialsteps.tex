@@ -31,6 +31,16 @@ Before starting the rooting process for your ACTAB721 device, take a few precaut
 
 In some cases, rooting the ACTAB721 device may require unlocking the bootloader. Unlocking the bootloader allows for the installation of custom software on the device. To unlock the bootloader of the ACTAB721 device there's an option that you need to toggle on: \faToggleOn \textsc{oem unlocking}.
 
+If you can't access Developer Options you can still launch it via the following code:
+
+\begin{lstlisting}[language=Java,linewidth=0.95\linewidth,caption={Launching Developer Options Activity}, label=lst:dev-activity, escapechar=\%]
+{
+        Intent intent = new Intent();
+        intent.setComponent(new ComponentName("com.android.settings", "com.android.settings.DevelopmentSettings"));
+        context.startActivity(intent);
+}
+\end{lstlisting}
+
 \section{Exploring Alternative Methods}{\faCaretRight}
 While the use of the \gls{twrp} is a popular method for rooting Android devices, unfortunately, it is not supported for Acer devices. However, there are alternative methods available that you can explore to root your Acer Android device. In this section, we will briefly discuss some of these alternative options.
 
